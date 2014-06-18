@@ -1,7 +1,7 @@
 hands-gesture-recognezer
 ========================
 
-Custom gesture recognizer based on NITE HandTracker sample
+Custom hands gestures recognizer based on NITE HandTracker sample
 
 Requiremets
 =======================
