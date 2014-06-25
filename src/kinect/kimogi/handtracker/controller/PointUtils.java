@@ -94,4 +94,24 @@ public class PointUtils {
 		Matrix multiplied = vector.times(matrix);
 		return multiplied.getArray()[0];
 	}
+	
+	public static ArrayList<Integer> vectorY(ArrayList<Point> points) {
+		ArrayList<Integer> vectorY = new ArrayList<Integer>();
+		Iterator<Point> it = points.iterator();
+		while(it.hasNext()) {
+			Point point = it.next();
+			vectorY.add(point.y);
+		}
+		return vectorY;
+	}
+	
+	public static ArrayList<Integer> vectorX(ArrayList<Point> points) {
+		ArrayList<Integer> vectorX = new ArrayList<Integer>();
+		Iterator<Point> it = points.iterator();
+		while(it.hasNext()) {
+			Point point = it.next();
+			vectorX.add(point.x);
+		}
+		return vectorX;
+	}
 }

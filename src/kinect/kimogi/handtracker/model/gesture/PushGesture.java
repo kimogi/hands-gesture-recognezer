@@ -1,4 +1,4 @@
-package kinect.kimogi.handtracker.model;
+package kinect.kimogi.handtracker.model.gesture;
 
 import java.awt.Point;
 import java.util.ArrayList;

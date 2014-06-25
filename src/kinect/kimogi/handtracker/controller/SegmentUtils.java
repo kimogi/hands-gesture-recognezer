@@ -47,7 +47,10 @@ public class SegmentUtils {
 		for(Pair<Segment, Segment> intersection : intersections) {
 			Segment line1 = intersection.getFirst();
 			Segment line2 = intersection.getSecond();
-			selfCrossings.add(SegmentUtils.intersection(line1, line2));
+			Point point = SegmentUtils.intersection(line1, line2);
+			if(point != null) {
+				selfCrossings.add(point);	
+			}
 		}
 		return selfCrossings;
 	}
